@@ -3,6 +3,18 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
+st.set_page_config(page_title="Marketing Predictor", layout="wide")
+
+st.markdown("""
+<head>
+  <meta property="og:title" content="Marketing Predictor App">
+  <meta property="og:description" content="A simple Streamlit app that predicts marketing outcomes using ML.">
+  <meta property="og:image" content="https://yourimageurl.com/preview.png">
+  <meta property="og:url" content="https://timmosky-web-development--predict-pan3up.streamlit.app/">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+""", unsafe_allow_html=True)
+
 Introduction = st.container()
 Dataset = st.container()
 Modelling = st.container()
